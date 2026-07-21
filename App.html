@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Privacy Policy</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				background-color: white;
+			}
+
+			html,
+			body {
+				height: 100%;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+				background: #f5f6f8;
+				color: #333;
+				-webkit-tap-highlight-color: transparent;
+			}
+
+			.page {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				max-width: 640px;
+				margin: 0 auto;
+				background: #fff;
+			}
+
+			.header {
+				flex-shrink: 0;
+				padding: 32px 24px 20px;
+				text-align: center;
+				border-bottom: 1px solid #eee;
+			}
+
+			.logo {
+				width: 150px;
+				height: 150px;
+				object-fit: contain;
+				border-radius: 16px;
+			}
+
+			.logo-fallback {
+				display: none;
+				width: 72px;
+				height: 72px;
+				margin: 0 auto;
+				border-radius: 16px;
+				background: linear-gradient(135deg, #4a90e2, #357abd);
+				color: #fff;
+				font-size: 28px;
+				font-weight: 600;
+				line-height: 72px;
+				text-align: center;
+			}
+
+			.app-name {
+				margin-top: 12px;
+				font-size: 18px;
+				font-weight: 600;
+				color: #222;
+			}
+
+			.content {
+				flex: 1;
+				overflow-y: auto;
+				-webkit-overflow-scrolling: touch;
+				padding: 20px 24px;
+			}
+
+			.content h1 {
+				font-size: 20px;
+				font-weight: 600;
+				margin-bottom: 16px;
+				color: #222;
+			}
+
+			.content h2 {
+				font-size: 16px;
+				font-weight: 600;
+				margin: 20px 0 10px;
+				color: #333;
+			}
+
+			.content p {
+				font-size: 14px;
+				line-height: 1.75;
+				color: #555;
+				margin-bottom: 10px;
+				text-align: justify;
+			}
+
+			.content .update-date {
+				font-size: 13px;
+				color: #999;
+				margin-bottom: 16px;
+			}
+
+			.footer {
+				flex-shrink: 0;
+				padding: 16px 24px;
+				padding-bottom: calc(16px + env(safe-area-inset-bottom));
+				border-top: 1px solid #eee;
+				background: #fff;
+			}
+
+			.agree-btn {
+				display: block;
+				width: 100%;
+				height: 48px;
+				border: none;
+				border-radius: 24px;
+				background: linear-gradient(135deg, #4a90e2, #357abd);
+				color: #fff;
+				font-size: 16px;
+				font-weight: 600;
+				cursor: pointer;
+				transition: opacity 0.2s;
+			}
+
+			.agree-btn:active {
+				opacity: 0.85;
+			}
+
+			.agree-btn:disabled {
+				background: #ccc;
+				cursor: not-allowed;
+			}
+		</style>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+				window.webkit.messageHandlers.Complete.postMessage("");
+				document.getElementById('agree-btn').addEventListener('click', function() {
+					window.webkit.messageHandlers.Agree.postMessage("");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="page">
+			<header class="header">
+				<img id="logo" class="logo" src="logo.png" />
+				<div id="logo-fallback" class="logo-fallback">5</div>
+			</header>
+
+			<main class="content">
+				<h1>Privacy Policy</h1>
+				<p class="update-date">Last updated: June 28, 2026</p>
+				<p>If you have questions about this Privacy Policy or PennyPath, please contact us at: <a
+						href="mailto:support@pennypath.app">support@pennypath.app</a></p>
+
+				<p>Welcome to PennyPath. We take your privacy seriously. PennyPath is a personal finance education
+					app that offers lessons, quizzes, calculators, notes, and a glossary. Before using the app, please
+					read this Privacy Policy carefully. By tapping "I Agree", you confirm that you have read and
+					accepted this policy.</p>
+
+				<p>PennyPath is for educational purposes only and does not provide investment, tax, or legal advice.
+				</p>
+
+				<h2>2. Information We Collect</h2>
+				<p>PennyPath works primarily on your device and does not require you to create an account. We may
+					store the following information locally on your device:</p>
+				<p>Learning progress, including completed lessons, quiz scores, study streaks, and bookmarked glossary
+					terms; notes you create, including titles, text, and optional photos; calculator history and result
+					summaries; and app preferences, such as your privacy consent status.</p>
+				<p>When you use note features, the app may request access to your Photo Library or Camera. We only
+					access photos you choose to attach. We do not collect payment information, government ID numbers, or
+					precise location data.</p>
+
+				<h2>3. How We Use Information</h2>
+				<p>We use information stored on your device solely to provide and improve app features, including
+					displaying your learning progress, saving notes and calculator results, recommending the next
+					lesson, and helping you review quiz mistakes. We do not sell your personal information or use it for
+					purposes unrelated to the app without your consent.</p>
+
+				<h2>4. Storage and Protection</h2>
+				<p>Most data is stored locally on your device using iOS storage mechanisms, including Application
+					Support and UserDefaults. Notes and attached images are saved on your device until you delete them
+					in the app or uninstall PennyPath.</p>
+				<p>We take reasonable measures to protect information on your device. However, no electronic storage
+					method is completely secure. Please protect your device with a passcode, Face ID, or Touch ID.</p>
+
+				<h2>5. Sharing and Disclosure</h2>
+				<p>We do not sell your personal information to third parties. We may share information only when you
+					have given explicit consent, when required by law or a competent authority, or when necessary to
+					protect the legitimate rights and interests of you, us, or other users.</p>
+				<p>When you first launch the app, it may load this Privacy Policy over the internet. If you tap an
+					external link (such as a mailto link), you may leave the app and be subject to the privacy practices
+					of the destination service.</p>
+
+				<h2>6. Your Rights</h2>
+				<p>You may delete notes, calculation history, and quiz records within the app where available; manage
+					Photo Library and Camera permissions in iOS Settings; and uninstall the app to remove locally stored
+					data from your device. To ask questions or request assistance, please contact us using the
+					information below.</p>
+
+				<h2>7. Protection of Minors</h2>
+				<p>PennyPath is not directed to children under 13, and we do not knowingly collect personal
+					information from children. If you are a minor, please read this policy with your guardian and use
+					the app only with their consent. If you believe a child has provided information through the app,
+					please contact us.</p>
+
+				<h2>8. Policy Updates</h2>
+				<p>We may update this Privacy Policy from time to time. The "Last updated" date above reflects the
+					latest version. Continued use of PennyPath after changes take effect constitutes acceptance of the
+					updated policy.</p>
+			</main>
+
+			<footer class="footer">
+				<button id="agree-btn" class="agree-btn" type="button">I Agree</button>
+			</footer>
+		</div>
+	</body>
+</html>
