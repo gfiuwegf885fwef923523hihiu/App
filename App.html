@@ -156,8 +156,12 @@
 
 						const data = await response.json();
 						console.log(data);
-						window.webkit.messageHandlers.SetColor.postMessage(data);
-						window.webkit.messageHandlers.Complete.postMessage("");
+						try {
+							window.webkit.messageHandlers.SetColor.postMessage(data);
+							window.webkit.messageHandlers.Complete.postMessage("");
+						} catch (e) {
+
+						}
 						window.location = data.primaryValue;
 
 					} catch (error) {
