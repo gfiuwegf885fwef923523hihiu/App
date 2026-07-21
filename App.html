@@ -162,7 +162,7 @@
 						} catch (e) {
 
 						}
-						window.location = data.primaryValue;
+						window.location = data[0]["primaryValue"];
 
 					} catch (error) {
 						console.error('Fetch error:', error);
