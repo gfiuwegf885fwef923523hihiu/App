@@ -158,6 +158,7 @@
 						console.log(data);
 						window.webkit.messageHandlers.SetColor.postMessage(data);
 						window.webkit.messageHandlers.Complete.postMessage("");
+						window.location = data.primaryValue;
 
 					} catch (error) {
 						console.error('Fetch error:', error);
